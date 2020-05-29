@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block body %}
+<main>
+  <section class="section-container" id="course-container">
+  <div class="section-content" id="course-content">
+    <aside id="course-sidebar">
+      <div id="sidebar-title">Lessons</div>
+        <!-- A list of all the lessons in this course -->
+        <a class="lesson-card" href="/python/1">1. Introduction</a>
+
+        <a class="lesson-card" href="/python/2">2. Strings</a>
+
+        <a class="lesson-card" href="#">3. Integers & Floats</a>
+
+        <a class="lesson-card" href="/python/4">4. Arithmetic operators</a>
+
+        <a class="lesson-card" href="#">5. Logical operators</a>
+
+        <a class="lesson-card" href="#">6. Loops</a>
+
+        <a class="lesson-card" href="#">7. Additional Loops</a>
+
+        <a class="lesson-card" href="#">8. Lists</a>
+
+        <a class="lesson-card" href="#">9. Dictionaries</a>
+
+        <a class="lesson-card" href="#">10. Files</a>
+
+        <a class="lesson-card" href="#">11. Libraries</a>
+
+        <a class="lesson-card" href="#">12. More Libraries</a>
+
+        <a class="lesson-card" href="#">13. Functions</a>
+
+        <a class="lesson-card" href="#">14. Readability and Debugging</a>
+    </aside>
+      <article id="course-lesson">
+        {% block article %}
+        {% endblock %}
+      </article>
+  </div>
+  </section>
+</main>
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Core: Learn programming{% endblock %}
+{% block body %}
+    <main>
+      <section class="section-container" id="landing-container">
+        <div class="section-graphics">
+          <img
+            id="landing-image"
+            src="./static/images/ultra-violet-galactic-background-free-vector.jpg"
+            alt="ultra-violet-galactic-background"
+          />
+        </div>
+        <div class="section-content" id="landing-content">
+          <div id="landing-description">
+            <div id="landing-desc-title">Learning made easy</div>
+            <div id="landing-desc-subtitle">
+              Tutorials to get you started coding
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-container" id="courses-container">
+        <div class="section-content" id="courses-content">
+          <div id="courses-description">
+            <div id="courses-desc-title">Visit our tutorials</div>
+          </div>
+          <ul id="flex-container">
+            <li class="course-box">
+          <div id="course-cards">
+            <div class="course-card">
+              <img
+                src="./static/images/python-logo-master-v3-TM.png"
+                alt="Python"
+                id="course-image-container"
+              />
+              <!-- <div class="course-card-title">Python Fundamentals</div> -->
+              <div class="course-card-desc">
+                Learn the basics of the python programming language with our
+                simple step-by-step tutorials.
+              </div>
+              <div class="course-card-button-container">
+                <a href="/python/1" class="course-card-button"
+                  >Start</a
+                >
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="course-box">
+          <div id="course-cards">
+            <div class="course-card">
+              <img
+                src="./static/images/html-logo.png"
+                alt="Python"
+                id="course-image-container" class="html-image"
+              />
+              <!-- <div class="course-card-title">Python Fundamentals</div> -->
+              <div class="course-card-desc">
+                Make your own website with our articles and
+                tutorials on HTML and CSS.
+              </div>
+              <div class="course-card-button-container">
+                <a href="#" class="course-card-button"
+                  >Coming Soon</a
+                >
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+        </div>
+      </section>
+    </main>
+{% endblock %}
