@@ -30,9 +30,10 @@
           <div id="course-cards">
             <div class="course-card">
               <img
-                src="./static/images/python-logo-master-v3-TM.png"
+                src="./static/images/python-logo.png"
                 alt="Python"
                 id="course-image-container"
+                class="pypic"
               />
               <!-- <div class="course-card-title">Python Fundamentals</div> -->
               <div class="course-card-desc">
@@ -62,13 +63,43 @@
               </div>
               <div class="course-card-button-container">
                 <a href="#" class="course-card-button"
-                  >Coming Soon</a
+                  >Upcoming</a
                 >
               </div>
             </div>
           </div>
         </li>
+        <li class="course-box">
+      <div id="course-cards">
+        <div class="course-card">
+          <img
+            src="{{ url_for('static', filename='images/react-logo.png') }}"
+            alt="React"
+            id="course-image-container"
+            class="react-image"
+          />
+          <!-- <div class="course-card-title">Python Fundamentals</div> -->
+          <div class="course-card-desc">
+            Built user interfaces and applications with React, an open
+            source Javascript library
+          </div>
+          <div class="course-card-button-container">
+            <a href="#" class="course-card-button">Upcoming</a>
+          </div>
+        </div>
+      </div>
+      </li>
       </ul>
+        </div>
+      </section>
+      <section class="section-container puzzle-container" id="courses-container">
+        <div class="section-content puzzle-content" id="courses-content">
+          <div id="courses-description" class="puzzle-description">
+            <div id="courses-desc-title" class="puzzle-title">Try out our puzzles!</div>
+          </div>
+          <div class="course-card-button-container">
+            <a href="/puzzles" class="course-card-button">Start</a>
+          </div>
         </div>
       </section>
     </main>

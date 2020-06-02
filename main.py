@@ -1,8 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+
 
 @app.route('/')
 def homepage():
@@ -14,16 +15,7 @@ def coursepage():
 
 @app.route('/python/<int:postID>')
 def pyTutorial(postID):
-  if postID == 1:
-    return render_template('pyT1.html')
-  elif postID == 2:
-    return render_template('pyT2.html')
-  elif postID == 3:
-    return render_template('pyT3.html')
-  elif postID == 4:
-    return render_template('pyT4.html')
-  else:
-    return '<h1>Page Not Found</h1>'
+  return render_template(f'pyT{postID}.html')
 
 @app.route('/about')
 def aboutpage():
@@ -32,6 +24,10 @@ def aboutpage():
 @app.route('/contact')
 def contactpage():
   return render_template('contact.html')
+
+@app.route('/puzzles')
+def puzzlehome():
+  return render_template('puzzlesMain.html')
 
 
 app.run(host='0.0.0.0', threaded=True)

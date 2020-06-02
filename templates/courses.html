@@ -8,9 +8,10 @@
     <div id="course-cards">
       <div class="course-card">
         <img
-          src="{{ url_for('static', filename='images/python-logo-master-v3-TM.png') }}"
+          src="{{ url_for('static', filename='images/python-logo.png') }}"
           alt="Python"
           id="course-image-container"
+          class="pypic"
         />
         <!-- <div class="course-card-title">Python Fundamentals</div> -->
         <div class="course-card-desc">
@@ -30,7 +31,7 @@
       <div class="course-card">
         <img
           src="./static/images/html-logo.png"
-          alt="Python"
+          alt="HTML"
           id="course-image-container"
         />
         <!-- <div class="course-card-title">Python Fundamentals</div> -->
@@ -40,12 +41,32 @@
         </div>
         <div class="course-card-button-container">
           <a href="#" class="course-card-button"
-            >Coming Soon</a
+            >Upcoming</a
           >
         </div>
       </div>
     </div>
   </li>
+  <li class="course-box">
+<div id="course-cards">
+  <div class="course-card">
+    <img
+      src="{{ url_for('static', filename='images/react-logo.png') }}"
+      alt="React"
+      id="course-image-container"
+      class="react-image"
+    />
+    <!-- <div class="course-card-title">Python Fundamentals</div> -->
+    <div class="course-card-desc">
+      Built user interfaces and applications with React, an open
+      source Javascript library
+    </div>
+    <div class="course-card-button-container">
+      <a href="#" class="course-card-button">Upcoming</a>
+    </div>
+  </div>
+</div>
+</li>
     </ul>
   </div>
 </section>

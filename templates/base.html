@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontstyle.css') }}" />
     <link rel="icon" href="{{ url_for('static', filename='images/logo-core-small.png') }}">
     <title>{% block title %}{% endblock %}</title>
     {% endblock %}
@@ -24,7 +25,7 @@
             <a class="nav-link" href="/courses">Courses</a>
           </li>
           <li class="link-container">
-            <a class="nav-link" href="/about">About Us</a>
+            <a class="nav-link" href="/puzzles">Puzzles</a>
           </li>
           <li class="link-container">
             <a class="nav-link" href="/contact">Contact</a>
@@ -46,7 +47,7 @@
       <a href="/courses" class="side-link-item side-button course-card-button-nav">Courses</a>
         </li>
         <li id="sidebar-link-item">
-      <a href="/about" class="side-link-item side-button course-card-button-nav">About</a>
+      <a href="/puzzles" class="side-link-item side-button course-card-button-nav">Puzzles</a>
         </li>
         <li id="sidebar-link-item">
       <a href="/contact" class="side-link-item side-button course-card-button-nav">Contact</a>
