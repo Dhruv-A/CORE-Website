@@ -17,10 +17,6 @@ def coursepage():
 def pyTutorial(postID):
   return render_template(f'pyT{postID}.html')
 
-@app.route('/about')
-def aboutpage():
-  return render_template('about.html')
-
 @app.route('/contact')
 def contactpage():
   return render_template('contact.html')

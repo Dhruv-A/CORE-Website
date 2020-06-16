@@ -2,7 +2,15 @@
 {% block title %}2. Strings{% endblock %}
 {% block article %}
 <h1 id="top-head">2. Strings</h1>
-<p id="sub-head">2.1 Basics</p>
+<h2 id="sub-head">2.1 Running Downloadable Files</h2>
+<p id="text-style">Many of the examples used will have
+    accompanying PDFs and Python Files. Make sure to download them
+    and have a look! There are instruction on how to open and run a
+    python file in the PDF below</p>
+<a id="link-style" href="{{ url_for('static', filename='pyCode/run-file-idle.pdf') }}"
+   download>Download PDF</a>
+<hr id="art-div">
+<h2 id="sub-head">2.2 Basics</h2>
 <p id="text-style">A string is a sequence of characters,
    a character being any letter, number or other symbol.
    In Python, you represent strings with quotation marks.
@@ -22,22 +30,25 @@
 <p id="code-style">>>> type('Hello World')<br>&lt;class 'str'></p>
 <p><span id="code-style">'str'</span><span id="text-style"> simply
    meaning that the content in the brackets is a string.</span></p>
+<a id="link-style" href="{{ url_for('static', filename='pyCode/string-type.py') }}"
+   download>Download example</a>
 <hr id="art-div">
-<h2 id="sub-head">2.2 What are methods?</h2>
+<h2 id="sub-head">2.3 What are methods?</h2>
 <p id="text-style">Methods are procedures you can perform on strings
    (and other data types that will be covered later like lists).
    Python has a set of built-in methods that you can use on strings and
    these can change various features of the string.</span></p>
 <hr id="art-div">
-<h2 id="sub-head">2.3 String Methods</h2>
+<h2 id="sub-head">2.4 String Methods</h2>
 <p id="text-style">Firstly, let's say you have the string:
    <span id="code-style">'Hello World'</span></p>
 <p id="text-style">If you want to capitalise the whole string, you could use
    <span id="code-style">upper</span> which is a method giving you
    a string with all the letters capitalised.</p>
 <p id="code-style">>>> 'Hello World'.upper()<br>HELLO WORLD</p>
-
-<p id="text-style">Note that if you try to capitalise a string
+<a id="link-style" href="{{ url_for('static', filename='pyCode/string-upper.py') }}"
+   download>Download example</a>
+<p id="text-style"><strong>Note:</strong> that if you try to capitalise a string
    which is already in caps, <span id="code-style">upper</span>
    will return that string:</p>
 
@@ -57,6 +68,8 @@
    otherwise it will output False:</p>
 
 <p id="code-style">>>>'HELLO WORLD'.isupper()<br>True</p>
+<a id="link-style" href="{{ url_for('static', filename='pyCode/string-isupper.py') }}"
+   download>Download example</a><br>
 <p id="code-style">>>>'Hello World'.isupper()<br>False</p>
 
 <p id="text-style">The last method we will cover in this article
@@ -70,7 +83,7 @@
    how many times a certain letter occurs:</p>
 <p id="code-style">>>> 'Hello World'.count('o')<br>2</p>
 <hr id="art-div">
-<h2 id="sub=head">2.4 Concatenation</h2>
+<h2 id="sub=head">2.5 Concatenation</h2>
 <p id=text-style>The process of joining strings is called concatenation.
    In python we can use + for this purpose. For example:</span></p>
 <p id="code-style">>>> 'Hello' + 'World'<br>'HelloWorld'</p>
@@ -78,4 +91,6 @@
    You need to consider this very often and there is a very simple fix:
    adding a space at the end of the first string.</p>
 <p id="code-style">>>> 'Hello ' + 'World'<br>Hello World</p>
+<a id="link-style" href="{{ url_for('static', filename='pyCode/string-concatenation.py') }}"
+   download>Download example</a>
 {% endblock %}

@@ -78,4 +78,28 @@
 <p id="text-style">So, those are integers and floats. We
    will look at reasons why integers and floats are
    important later!</p>
+<hr id="art-div">
+<h2 id="sub-head">3.5 Type casting</h2>
+<p id="text-style">Sometimes, we want to convert between
+   integers and strings. We can only concatenate strings, therefore,
+   in order to join a string and an integer, we need to convert
+   the integer into a string first. Let's say we want to print
+   the temperature:</p>
+<p id="code-style">>>> temp = 20<br>
+   print('It is ' + temp + ' degrees today!')<br>
+   Traceback (most recent call last):<br>
+   &emsp;File "&lt;pyshell#3>", line 1, in &lt;module><br>
+   &emsp;&emsp;print('It is ' + temp + ' degrees today!')<br>
+   TypeError: can only concatenate str (not "int") to str</p>
+<p id="text-style">As explained, you need will get an error if
+   you try to concatenate a string and an integer. To fix this
+   we change the integer to a string:</p>
+<p id="code-style">
+   >>> temp = 20<br>
+   &emsp;&emsp;print('It is ' + str(temp) + ' degrees today!')<br>
+   It is 20 degrees today!
+    </p>
+<p id="text-style">Conversely, we sometimes want to convert strings
+   to integers so that we can do some maths with them. This will be covered
+   in the next article!</p>
 {% endblock %}

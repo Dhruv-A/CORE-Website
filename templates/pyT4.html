@@ -117,4 +117,36 @@
 <p id="code-style">>>> a= 12<br>>>> b = 3<br>>>> c = 1.5
    <br>>>> a + b<br>15<br>>>> a - b<br>9<br>>>> a * b<br>36<br>
    >>> a / c<br>8.0<br>>>> a // b<br>4<br>>>> c ** b<br>3.375</p>
+<hr id="art-div">
+<h2 id="sub-head">4.7 Converting strings to integers</h2>
+<p id="text-style"> Sometimes, we want to convert a string to an integer
+   so that we can perform the above maths on it. This can be done using
+   <em>int()</em>.</p>
+<p id="code-style">
+   >>> num = 5<br>
+   >>> print(type(num))<br>
+   &lt;class 'int'><br>
+   >>> num = '5'<br>
+   >>> print(type(num))<br>
+   &lt;class 'str'><br>
+   >>> print(type(int(num)))<br>
+   &lt;class 'int'>
+</p>
+<p id="text-style">When we want to get an input from the user,
+   we use <em>input()</em>. However, sometimes we want to get an
+   an integer input from the user. The <em>input()</em> function
+   gives you a string, so we can simply surround it in <em>int()</em>.</p>
+<p id="code-style">
+   >>> year = input('What year is it? ')<br>
+   What year is it? 2020<br>
+   >>> print(type(year))<br>
+   &lt;class 'str'><br>
+   >>> year = int(input('What year is it? '))<br>
+   What year is it? 2020<br>
+   >>> print(type(year))<br>
+   &lt;class 'int'>
+</p>
+<p id="text-style">As you can see, when we don't convert our input to
+   an integer, even if we enter a number, it is a string. But when we
+   convert it to an integer using <em>int()</em>, it makes it an integer!</p>
 {% endblock %}
